@@ -1,0 +1,121 @@
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .intro {
+    background: url("../img/sushi_inicio.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    width: 100%;
+  }
+  .map-sect,
+  .gallery {
+    width: 100%;
+    background-color: black;
+    box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
+    padding-bottom: 1.5rem;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery {
+    .gallery-container {
+      width: 50%;
+    }
+  }
+  .map-sect {
+    background: url("../img/sushi_map.jpg") no-repeat;
+    background-size: cover;
+    z-index: 2;
+  }
+
+  .social-media {
+    z-index: 5;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.568);
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    a {
+      margin: 1rem;
+      padding: 0.7rem 1rem;
+      border-radius: 50%;
+    }
+    p {
+      font-size: 1.5rem;
+      color: white;
+    }
+  }
+}
+
+.insta-back {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.whats-back {
+  background-color: #25d366;
+}
+footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
+  z-index: 3;
+}
+.map {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  iframe {
+    margin-right: 12rem;
+  }
+  .map-banner {
+    margin-left: 4rem;
+    background-color: rgba(0, 0, 0, 0.623);
+    padding: 2rem;
+    border-radius: 15px;
+
+    .localidades {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+    }
+  }
+}

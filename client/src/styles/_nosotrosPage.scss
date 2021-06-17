@@ -1,0 +1,25 @@
+.NosotrosPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .nosotros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 2rem;
+    width: 90%;
+    border-radius: 10px;
+    p {
+      width: 700px;
+    }
+    img {
+      height: 500px;
+      border-radius: 10px;
+      margin: 2rem;
+    }
+  }
+}

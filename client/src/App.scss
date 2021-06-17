@@ -1,0 +1,55 @@
+@import "./styles/layout";
+@import "./styles/navbar";
+@import "./styles/title";
+@import "./styles/menuPage";
+@import "./styles/homePage";
+@import "./styles/pedidosPage";
+@import "./styles/nosotrosPage";
+@import "./styles/gyozasPage";
+@import "./styles/productCard";
+@import "./styles/cart";
+@import "./styles/deliveryForm";
+@import "./styles/ordersPage";
+@import "./styles/order";
+@import "./styles/orderForm";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100%;
+}
+#root {
+  min-height: 100%;
+}
+body {
+  color: rgb(182, 180, 180);
+  font-family: "Recursive", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+}
+.main-content {
+  min-height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(167, 28, 28);
+}

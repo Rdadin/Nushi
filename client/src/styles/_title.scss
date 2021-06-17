@@ -1,0 +1,19 @@
+.Title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .title-text {
+    font-size: 3rem;
+  }
+  .title-line {
+    height: 0.5rem;
+    width: 30rem;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    opacity: 0.5;
+  }
+}

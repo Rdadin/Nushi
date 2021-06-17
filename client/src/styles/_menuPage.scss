@@ -1,0 +1,28 @@
+.MenuPage {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.59'%3E%3Ccircle fill='%23000000' cx='50' cy='0' r='50'/%3E%3Cg fill='%230b0200' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23140500' cx='50' cy='100' r='50'/%3E%3Cg fill='%231a0700' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%231f0a00' cx='50' cy='200' r='50'/%3E%3Cg fill='%23240c00' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23280e01' cx='50' cy='300' r='50'/%3E%3Cg fill='%232d0e01' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23310f01' cx='50' cy='400' r='50'/%3E%3Cg fill='%23361001' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%233b1001' cx='50' cy='500' r='50'/%3E%3Cg fill='%23401001' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23451001' cx='50' cy='600' r='50'/%3E%3Cg fill='%234b1001' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23501001' cx='50' cy='700' r='50'/%3E%3Cg fill='%23551001' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%235a1001' cx='50' cy='800' r='50'/%3E%3Cg fill='%23600f01' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23650e01' cx='50' cy='900' r='50'/%3E%3Cg fill='%236b0d00' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23700c00' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .menu {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 60%;
+    align-self: center;
+  }
+}
+.slider-single :active {
+  background-color: rgba(0, 0, 0, 0);
+}
+.slider-single {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.react-3d-carousel .slider-container .slider-right div {
+  border: 2px solid #f5413b;
+}
+.react-3d-carousel .slider-container .slider-left div {
+  border: 2px solid #f5413b;
+}

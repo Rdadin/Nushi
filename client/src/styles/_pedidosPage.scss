@@ -1,0 +1,122 @@
+.PedidosPage {
+  height: 100vh;
+  .order-section {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    .product-selection {
+      background-color: rgba(0, 0, 0, 0.637);
+      border-radius: 20px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 700px;
+      .card-container {
+        display: grid;
+        grid-template-columns: 450px 450px;
+        grid-template-rows: 140px 140px 140px 140px;
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+        margin-top: 2rem;
+      }
+      .combo-container {
+        grid-template-rows: 190px 190px 190px;
+      }
+    }
+    .cart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.637);
+      border-radius: 20px;
+      padding: 1rem;
+      height: 700px;
+      .cart-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .cart-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .cart-info {
+            height: 60px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            .price-total {
+              font-size: 1.6rem;
+              color: white;
+            }
+          }
+        }
+        .order-info {
+          width: 300px;
+          margin-left: 15px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+.categories {
+  display: flex;
+  .selected {
+    background-color: rgb(167, 28, 28);
+    color: #a79d9d;
+  }
+}
+.categories,
+.cart-info {
+  button {
+    font-family: inherit;
+    margin-right: 1rem;
+    background-color: #a79d9d;
+    border: none;
+    border-radius: 10px;
+    color: rgb(167, 28, 28);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    transition-duration: 0.4s;
+  }
+  button:hover {
+    background-color: rgb(167, 28, 28);
+    color: #a79d9d;
+  }
+}
+.tablas {
+  margin-top: 15px;
+  button {
+    font-family: inherit;
+    margin-right: 1rem;
+    background-color: #a79d9d;
+    border: none;
+    border-radius: 10px;
+    color: rgb(167, 28, 28);
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    transition-duration: 0.4s;
+  }
+  button:hover {
+    background-color: rgb(167, 28, 28);
+    color: #a79d9d;
+  }
+  .selected {
+    background-color: rgb(167, 28, 28);
+    color: #a79d9d;
+  }
+}
