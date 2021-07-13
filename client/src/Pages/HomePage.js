@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -7,6 +7,14 @@ import images from "../img/gallery.js";
 import Title from "../Components/Title";
 
 function HomePage() {
+  useEffect(() => {
+    const el = document.querySelector(".loader-container");
+    if (el) {
+      setTimeout(() => {
+        el.style.display = "none";
+      }, 2000);
+    }
+  });
   return (
     <div className="HomePage">
       <section className="intro">" "</section>

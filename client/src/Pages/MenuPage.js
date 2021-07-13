@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Title from "../Components/Title";
 import { Carousel } from "3d-react-carousal";
 import menuGyosas from "../img/menu-gyosas.png";
@@ -9,6 +9,14 @@ import menuTablas from "../img/menu-tablas.png";
 import menuTablas2 from "../img/menu-tablas-2.png";
 
 function MenuPage() {
+  useEffect(() => {
+    const el = document.querySelector(".loader-container");
+    if (el) {
+      setTimeout(() => {
+        el.style.display = "none";
+      }, 2000);
+    }
+  });
   let slides = [
     <img src={menuGyosas} alt="1" />,
     <img src={menuUrumaki} alt="2" />,

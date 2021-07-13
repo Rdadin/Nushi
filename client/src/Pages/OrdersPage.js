@@ -7,6 +7,14 @@ import { getOrders } from "../actions/orders";
 import { fillCart } from "../actions/cart";
 
 function OrdersPage() {
+  useEffect(() => {
+    const el = document.querySelector(".loader-container");
+    if (el) {
+      setTimeout(() => {
+        el.style.display = "none";
+      }, 2000);
+    }
+  });
   const [currentId, setCurrentId] = useState(null);
   const products = useSelector((state) => state.products);
   const orders = useSelector((state) => state.orders);

@@ -7,8 +7,17 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { fillCart } from "../actions/cart";
 import { resetAmmounts } from "../actions/products";
+import { useCountRenders } from "../hooks/useCountRenders";
 
 function PedidosPage() {
+  useEffect(() => {
+    const el = document.querySelector(".loader-container");
+    if (el) {
+      setTimeout(() => {
+        el.style.display = "none";
+      }, 2000);
+    }
+  });
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products);
   useEffect(() => {
@@ -22,7 +31,7 @@ function PedidosPage() {
   const totalPrice = cart
     .map((product) => product.price * product.selectedAmmount)
     .reduce((a, b) => a + b, 0);
-
+  useCountRenders();
   return (
     <div className="PedidosPage">
       <Title title={"PEDIDOS"} />
